@@ -21,7 +21,8 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         await client.connect(); // connect this with my db
-        // console.log('connected to database');    // check is it properly connected with my db
+        // console.log('connected to database');
+        // check is it properly connected with my
 
         // create data base or find out it.. if it not found then it make it self
         const database = client.db('carMechanic')
