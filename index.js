@@ -82,6 +82,10 @@ app.get('/', (req, res) => {
     res.send('Running Genius Server'); // show in localhost: 5000
 });
 
+app.get('/hello', (req, res) => {
+    res.send('Hello Updated Here');
+})
+
 app.listen(port, () => {
     console.log('Running Genius Server on port: ', port); // show in terminal
 })
